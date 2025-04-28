@@ -25,7 +25,7 @@
 			content="Transformeer uw bedrijf met AI-gereed oplossingen. Expert AI strategie ontwikkeling en implementatie."
 		/>
 		<meta property="og:type" content="website" />
-		<meta property="og:url" content="https://businessdatasolutions.nl" />
+		<meta property="og:url" content="" id="ogUrl" />
 
 		<!-- Twitter Card Meta Tags -->
 		<meta name="twitter:card" content="summary_large_image" />
@@ -36,7 +36,7 @@
 		/>
 
 		<!-- Canonical URL -->
-		<link rel="canonical" href="https://businessdatasolutions.nl/nl" />
+		<link rel="canonical" href="" id="canonicalUrl" />
 
 		<!-- Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -48,6 +48,9 @@
 
 		<!-- Tailwind CSS -->
 		<script src="https://cdn.tailwindcss.com"></script>
+		<!-- Base URL Script -->
+		<script src="../js/base-url.js"></script>
+		<script src="../js/fix-paths.js"></script>
 		<script>
 			tailwind.config = {
 				theme: {
@@ -277,7 +280,7 @@
 			<!-- Background Image -->
 			<div class="absolute inset-0 z-0">
 				<img
-					src="/images/hero-bg.jpg"
+					src="./images/hero-bg.jpg"
 					alt="AI en Bedrijfstransformatie"
 					class="w-full h-full object-cover"
 				/>
@@ -553,7 +556,7 @@
 		</footer>
 
 		<!-- Schema.org Markup -->
-		<script type="application/ld+json">
+		<script type="application/ld+json" id="schemaOrgData">
 			{
 				"@context": "https://schema.org",
 				"@type": "Organization",

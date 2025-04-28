@@ -29,7 +29,7 @@
 		<meta property="og:type" content="article" />
 		<meta
 			property="og:url"
-			content="https://businessdatasolutions.nl/news/nl/de-toekomst-van-ai-in-bedrijfsprocessen"
+			content="" id="ogUrl"
 		/>
 		<meta
 			property="article:published_time"
@@ -55,7 +55,7 @@
 		<!-- Canonical URL -->
 		<link
 			rel="canonical"
-			href="https://businessdatasolutions.nl/news/nl/de-toekomst-van-ai-in-bedrijfsprocessen"
+			href="" id="canonicalUrl"
 		/>
 
 		<!-- Fonts -->
@@ -68,6 +68,9 @@
 
 		<!-- Tailwind CSS -->
 		<script src="https://cdn.tailwindcss.com"></script>
+		<!-- Base URL Script -->
+		<script src="../js/base-url.js"></script>
+		<script src="../js/fix-paths.js"></script>
 		<script>
 			tailwind.config = {
 				theme: {
@@ -628,7 +631,7 @@
 		</footer>
 
 		<!-- Schema.org Markup -->
-		<script type="application/ld+json">
+		<script type="application/ld+json" id="schemaOrgData">
 			{
 				"@context": "https://schema.org",
 				"@type": "Article",

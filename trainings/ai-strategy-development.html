@@ -27,7 +27,7 @@
 		<meta property="og:type" content="website" />
 		<meta
 			property="og:url"
-			content="https://businessdatasolutions.nl/trainings/ai-strategy-development"
+			content="" id="ogUrl"
 		/>
 
 		<!-- Twitter Card Meta Tags -->
@@ -41,7 +41,7 @@
 		<!-- Canonical URL -->
 		<link
 			rel="canonical"
-			href="https://businessdatasolutions.nl/trainings/ai-strategy-development"
+			href="" id="canonicalUrl"
 		/>
 
 		<!-- Fonts -->
@@ -54,6 +54,9 @@
 
 		<!-- Tailwind CSS -->
 		<script src="https://cdn.tailwindcss.com"></script>
+		<!-- Base URL Script -->
+		<script src="../js/base-url.js"></script>
+		<script src="../js/fix-paths.js"></script>
 		<script>
 			tailwind.config = {
 				theme: {
@@ -283,7 +286,7 @@
 			<!-- Background Image -->
 			<div class="absolute inset-0 z-0">
 				<img
-					src="/images/ai-strategy-hero.png"
+					src="../images/ai-strategy-hero.png"
 					alt="AI Strategy Development Training"
 					class="w-full h-full object-cover"
 				/>
@@ -616,7 +619,7 @@
 		</footer>
 
 		<!-- Schema.org Markup -->
-		<script type="application/ld+json">
+		<script type="application/ld+json" id="schemaOrgData">
 			{
 				"@context": "https://schema.org",
 				"@type": "Course",

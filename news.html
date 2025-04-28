@@ -22,7 +22,7 @@
 			content="Stay updated with the latest insights, industry trends, and case studies from Ten Hove Business Data Solutions."
 		/>
 		<meta property="og:type" content="website" />
-		<meta property="og:url" content="https://businessdatasolutions.nl/news" />
+		<meta property="og:url" content="" id="ogUrl" />
 
 		<!-- Twitter Card Meta Tags -->
 		<meta name="twitter:card" content="summary_large_image" />
@@ -33,7 +33,7 @@
 		/>
 
 		<!-- Canonical URL -->
-		<link rel="canonical" href="https://businessdatasolutions.nl/news" />
+		<link rel="canonical" href="" id="canonicalUrl" />
 
 		<!-- Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -45,6 +45,9 @@
 
 		<!-- Tailwind CSS -->
 		<script src="https://cdn.tailwindcss.com"></script>
+		<!-- Base URL Script -->
+		<script src="../js/base-url.js"></script>
+		<script src="../js/fix-paths.js"></script>
 		<script>
 			tailwind.config = {
 				theme: {
@@ -559,7 +562,7 @@
 		</footer>
 
 		<!-- Schema.org Markup -->
-		<script type="application/ld+json">
+		<script type="application/ld+json" id="schemaOrgData">
 			{
 				"@context": "https://schema.org",
 				"@type": "CollectionPage",
