@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Page Not Found | Hove AI Dynamics</title>
+		<meta
+			name="description"
+			content="The page you are looking for could not be found."
+		/>
+
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- Tailwind CSS -->
+		<script src="https://cdn.tailwindcss.com"></script>
+		
+		<!-- Base URL Script -->
+		<script src="./js/base-url.js"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						colors: {
+							steel_blue: {
+								DEFAULT: "#2d7dd2",
+								100: "#09192a",
+								200: "#123254",
+								300: "#1b4b7e",
+								400: "#2464a8",
+								500: "#2d7dd2",
+								600: "#5797db",
+								700: "#81b1e4",
+								800: "#abcbed",
+								900: "#d5e5f6",
+							},
+							davys_gray: {
+								DEFAULT: "#474647",
+								100: "#0e0e0e",
+								200: "#1d1c1d",
+								300: "#2b2a2b",
+								400: "#3a393a",
+								500: "#474647",
+								600: "#6d6b6d",
+								700: "#929092",
+								800: "#b6b5b6",
+								900: "#dbdadb",
+							},
+						},
+						fontFamily: {
+							wix: ['"Wix Madefor Text"', "sans-serif"],
+						},
+					},
+				},
+			};
+		</script>
+
+		<!-- Custom CSS -->
+		<style>
+			.wix-madefor-text-text {
+				font-family: "Wix Madefor Text", sans-serif;
+				font-optical-sizing: auto;
+				font-weight: 300;
+				font-style: normal;
+			}
+
+			.wix-madefor-text-title {
+				font-family: "Wix Madefor Text", sans-serif;
+				font-optical-sizing: auto;
+				font-weight: 700;
+				font-style: normal;
+			}
+		</style>
+	</head>
+	<body class="wix-madefor-text-text bg-white">
+		<!-- Navigation -->
+		<nav class="bg-white shadow-sm sticky top-0 z-50">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="flex justify-between h-16">
+					<!-- Logo -->
+					<div class="flex items-center">
+						<a
+							href="./"
+							class="wix-madefor-text-title text-xl text-steel_blue-500"
+						>
+							Hove AI Dynamics
+						</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<!-- 404 Content -->
+		<section class="py-20">
+			<div class="container mx-auto px-4 text-center">
+				<h1 class="wix-madefor-text-title text-5xl text-steel_blue-500 mb-6">
+					404
+				</h1>
+				<h2 class="wix-madefor-text-title text-3xl mb-8">
+					Page Not Found
+				</h2>
+				<p class="wix-madefor-text-text text-xl mb-12 max-w-2xl mx-auto">
+					The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.
+				</p>
+				<a
+					href="./"
+					class="bg-steel_blue-500 hover:bg-steel_blue-600 text-white py-3 px-8 rounded transition-colors inline-block"
+				>
+					Go to Homepage
+				</a>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="bg-steel_blue-900 text-white py-8 absolute bottom-0 w-full">
+			<div class="container mx-auto px-4 text-center">
+				<p class="text-steel_blue-100 font-medium">
+					&copy; 2024 Hove AI Dynamics. All rights reserved.
+				</p>
+			</div>
+		</footer>
+		
+		<script>
+			// Fix base URL for homepage link
+			document.addEventListener("DOMContentLoaded", function() {
+				const baseUrl = window.baseUrl || '';
+				const homeLinks = document.querySelectorAll('a[href="./"]');
+				
+				homeLinks.forEach(link => {
+					link.href = baseUrl ? baseUrl + '/' : './';
+				});
+			});
+		</script>
+	</body>
+</html>
