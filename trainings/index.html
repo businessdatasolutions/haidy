@@ -27,7 +27,7 @@
 		<meta property="og:type" content="website" />
 		<meta
 			property="og:url"
-			content="https://businessdatasolutions.nl/trainings"
+			content=""
 		/>
 
 		<!-- Twitter Card Meta Tags -->
@@ -39,10 +39,13 @@
 		/>
 
 		<!-- Canonical URL -->
-		<link rel="canonical" href="https://businessdatasolutions.nl/trainings" />
+		<link rel="canonical" href="" id="canonicalUrl" />
 
 		<!-- Tailwind CSS -->
 		<script src="https://cdn.tailwindcss.com"></script>
+		
+		<!-- Base URL Script -->
+		<script src="../js/base-url.js"></script>
 		<script>
 			tailwind.config = {
 				theme: {
@@ -160,7 +163,7 @@
 				<div class="flex justify-between h-16">
 					<div class="flex items-center">
 						<a
-							href="/"
+							href="../"
 							class="wix-madefor-text-title text-xl text-steel_blue-500"
 						>
 							Hove AI Dynamics
@@ -169,22 +172,22 @@
 
 					<div class="hidden md:flex items-center">
 						<a
-							href="/#services"
+							href="../#services"
 							class="wix-madefor-text-text px-3 py-2 text-davys_gray-700 hover:text-steel_blue-500 border-b-2 border-transparent hover:border-steel_blue-500 transition-colors"
 							>Services</a
 						>
 						<a
-							href="/#about"
+							href="../#about"
 							class="wix-madefor-text-text px-3 py-2 text-davys_gray-700 hover:text-steel_blue-500 border-b-2 border-transparent hover:border-steel_blue-500 transition-colors"
 							>About</a
 						>
 						<a
-							href="/news/"
+							href="../news/"
 							class="wix-madefor-text-text px-3 py-2 text-davys_gray-700 hover:text-steel_blue-500 border-b-2 border-transparent hover:border-steel_blue-500 transition-colors"
 							>News</a
 						>
 						<a
-							href="/#contact"
+							href="../#contact"
 							class="wix-madefor-text-text px-3 py-2 text-davys_gray-700 hover:text-steel_blue-500 border-b-2 border-transparent hover:border-steel_blue-500 transition-colors"
 							>Contact</a
 						>
@@ -192,7 +195,7 @@
 						<!-- Language Switcher -->
 						<div class="ml-4">
 							<a
-								href="/trainings/index.nl.html"
+								href="./index.nl.html"
 								class="bg-white text-steel_blue-500 hover:bg-steel_blue-500 hover:text-white py-2 px-4 rounded-full shadow-md transition-colors flex items-center border-2 border-steel_blue-500"
 							>
 								<span class="mr-2 font-bold">NL</span>
@@ -246,27 +249,27 @@
 			<div class="md:hidden hidden" id="mobile-menu">
 				<div class="px-2 pt-2 pb-3 space-y-1">
 					<a
-						href="/#services"
+						href="../#services"
 						class="block px-3 py-2 text-davys_gray-700 hover:text-steel_blue-500 hover:bg-steel_blue-50 rounded-md"
 						>Services</a
 					>
 					<a
-						href="/#about"
+						href="../#about"
 						class="block px-3 py-2 text-davys_gray-700 hover:text-steel_blue-500 hover:bg-steel_blue-50 rounded-md"
 						>About</a
 					>
 					<a
-						href="/news/"
+						href="../news/"
 						class="block px-3 py-2 text-davys_gray-700 hover:text-steel_blue-500 hover:bg-steel_blue-50 rounded-md"
 						>News</a
 					>
 					<a
-						href="/#contact"
+						href="../#contact"
 						class="block px-3 py-2 text-davys_gray-700 hover:text-steel_blue-500 hover:bg-steel_blue-50 rounded-md"
 						>Contact</a
 					>
 					<a
-						href="/trainings/index.nl.html"
+						href="./index.nl.html"
 						class="block px-3 py-2 text-steel_blue-500 hover:text-white hover:bg-steel_blue-500 rounded-md"
 						>NL</a
 					>
@@ -279,7 +282,7 @@
 			<!-- Background Image -->
 			<div class="absolute inset-0 z-0">
 				<img
-					src="/images/training-hero.jpg"
+					src="../images/training-hero.jpg"
 					alt="AI Training Programs"
 					class="w-full h-full object-cover"
 				/>
@@ -368,7 +371,7 @@
 								</li>
 							</ul>
 							<a
-								href="/trainings/ai-strategy-development.html"
+								href="./ai-strategy-development.html"
 								class="inline-block bg-steel_blue-500 text-white px-6 py-2 rounded-lg hover:bg-steel_blue-600 transition-colors"
 							>
 								Learn More
@@ -528,7 +531,7 @@
 						"@type": "Course",
 						"name": "AI Strategy Development Training",
 						"description": "Transform your business with our comprehensive AI strategy development program.",
-						"url": "https://businessdatasolutions.nl/trainings/ai-strategy-development"
+						"url": ""
 					},
 					{
 						"@type": "Organization",
@@ -541,6 +544,21 @@
 		<!-- Animation Script -->
 		<script>
 			document.addEventListener("DOMContentLoaded", function () {
+				// Set dynamic URLs based on the deployment environment
+				const currentURL = window.location.href;
+				const canonicalUrlElement = document.getElementById('canonicalUrl');
+				const schemaData = document.querySelector('script[type="application/ld+json"]');
+				
+				if (canonicalUrlElement) {
+					canonicalUrlElement.setAttribute('href', currentURL);
+				}
+				
+				if (schemaData) {
+					const data = JSON.parse(schemaData.textContent);
+					data.itemListElement[0].url = currentURL.replace('index.html', 'ai-strategy-development.html');
+					schemaData.textContent = JSON.stringify(data, null, 2);
+				}
+				
 				const reveals = document.querySelectorAll(".reveal");
 				const mobileMenuButton = document.getElementById("mobile-menu-button");
 				const mobileMenu = document.getElementById("mobile-menu");
