@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <!-- Dutch Pages (now primary) -->
+    <!-- Dutch Pages (primary) -->
     <url>
         <loc>https://businessdatasolutions.github.io/haidy/</loc>
-        <lastmod>2024-04-27</lastmod>
+        <lastmod>2024-04-28</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://businessdatasolutions.github.io/haidy/news/</loc>
-        <lastmod>2024-04-26</lastmod>
+        <lastmod>2024-04-28</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://businessdatasolutions.github.io/haidy/news/evolution-of-business-management.html</loc>
-        <lastmod>2024-04-26</lastmod>
+        <lastmod>2024-04-28</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://businessdatasolutions.github.io/haidy/news/de-toekomst-van-ai-in-bedrijfsprocessen.html</loc>
-        <lastmod>2024-04-26</lastmod>
+        <lastmod>2024-04-28</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://businessdatasolutions.github.io/haidy/trainings/</loc>
-        <lastmod>2024-04-27</lastmod>
+        <lastmod>2024-04-28</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://businessdatasolutions.github.io/haidy/trainings/ai-strategy-development.html</loc>
-        <lastmod>2024-04-27</lastmod>
+        <lastmod>2024-04-28</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>

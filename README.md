@@ -15,7 +15,7 @@ This repository contains the website for Hove AI Dynamics, a consultancy focused
 - `/trainings` - Training programs information
 - `/images` - Website images
 - `/js` - JavaScript files for path handling and other functionality
-- `/backup_english` - Backup of original English website pages
+- `/backup_english` - Backup of original English website pages (kept for reference)
 
 ## GitHub Pages Setup
 
@@ -28,10 +28,9 @@ This site is optimized for GitHub Pages with:
 
 ### Path Handling
 
-Two JavaScript files handle paths correctly for GitHub Pages:
+A single JavaScript file handles all path management for GitHub Pages:
 
-1. `js/base-url.js`: Determines the base URL based on the deployment environment
-2. `js/fix-paths.js`: Updates all internal links, image paths, and metadata to include the repository name
+`js/site-paths.js`: Handles base URL detection and updates all paths, links, and metadata to ensure proper functionality in the GitHub Pages environment
 
 ## Development
 
@@ -50,6 +49,10 @@ Several utility scripts were created during development:
 - `fix-paths.sh`: Fixed path references for GitHub Pages
 - `fix-schema-json.sh`: Fixed schema.org JSON data issues
 - `verify-github-paths.sh`: Verifies all paths are correct for GitHub Pages
+- `clean-code.sh`: Removes unnecessary language elements and fixes path inconsistencies
+- `update-scripts.sh`: Updates JavaScript references to use the combined path handling script
+
+All JavaScript path handling is now consolidated in `js/site-paths.js` which replaces the previously separate `base-url.js` and `fix-paths.js` files.
 
 ## Deployment
 
