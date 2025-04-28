@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://username.github.io/haidy/sitemap.xml 
+Sitemap: https://businessdatasolutions.github.io/haidy/sitemap.xml 

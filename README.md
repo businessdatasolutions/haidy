@@ -48,3 +48,8 @@ To deploy this site:
 
 For inquiries about this website, contact:
 witek@businessdatasolutions.nl
+
+## GitHub Pages URL
+
+This site is accessible at:
+https://businessdatasolutions.github.io/haidy/
