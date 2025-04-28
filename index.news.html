@@ -8,24 +8,24 @@
     />
 
     <!-- SEO Meta Tags -->
-    <title>Hove AI Dynamics | AI News & Insights</title>
+    <title>Hove AI Dynamics | AI Nieuws & Inzichten</title>
     <meta
       name="description"
-      content="Stay updated with the latest insights, trends, and news in AI and business transformation from Hove AI Dynamics."
+      content="Blijf op de hoogte van de laatste ontwikkelingen, trends en nieuws over AI en bedrijfstransformatie van Ten Hove Business Data Solutions."
     />
     <meta
       name="keywords"
-      content="AI news, business transformation, artificial intelligence updates, industry insights, AI trends"
+      content="AI nieuws, bedrijfstransformatie, kunstmatige intelligentie updates, branche inzichten, AI trends"
     />
 
     <!-- Open Graph / Social Media Meta Tags -->
     <meta
       property="og:title"
-      content="Hove AI Dynamics | AI News & Insights"
+      content="Hove AI Dynamics | AI Nieuws & Inzichten"
     />
     <meta
       property="og:description"
-      content="Stay updated with the latest insights, trends, and news in AI and business transformation."
+      content="Blijf op de hoogte van de laatste ontwikkelingen, trends en nieuws over AI en bedrijfstransformatie."
     />
     <meta
       property="og:type"
@@ -48,7 +48,7 @@
     />
     <meta
       name="twitter:description"
-      content="Stay updated with the latest insights, trends, and news in AI and business transformation."
+      content="Blijf op de hoogte van de laatste ontwikkelingen, trends en nieuws over AI en bedrijfstransformatie."
     />
 
     <!-- Canonical URL -->
@@ -75,9 +75,8 @@
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Base URL Script -->
-    <script src="../js/base-url.js"></script>
-    <script src="../js/fix-paths.js"></script>
+    <!-- Site Paths Script -->
+    <script src="./js/site-paths.js"></script>
     <script>
       tailwind.config = {
         theme: {
@@ -200,17 +199,17 @@
             <a
               href="./#services"
               class="wix-madefor-text-text px-3 py-2 text-davys_gray-700 hover:text-steel_blue-500 border-b-2 border-transparent hover:border-steel_blue-500 transition-colors"
-              >Services</a
+              >Diensten</a
             >
             <a
               href="./#about"
               class="wix-madefor-text-text px-3 py-2 text-davys_gray-700 hover:text-steel_blue-500 border-b-2 border-transparent hover:border-steel_blue-500 transition-colors"
-              >About</a
+              >Over ons</a
             >
             <a
-              href="./news"
+              href="./"
               class="wix-madefor-text-text px-3 py-2 text-steel_blue-500 border-b-2 border-steel_blue-500 transition-colors"
-              >News</a
+              >Nieuws</a
             >
             <a
               href="./#contact"
@@ -254,51 +253,46 @@
           <a
             href="./#services"
             class="block px-3 py-2 text-davys_gray-700 hover:text-steel_blue-500 hover:bg-steel_blue-50 rounded-md"
-            >Services</a
+            >Diensten</a
           >
           <a
             href="./#about"
             class="block px-3 py-2 text-davys_gray-700 hover:text-steel_blue-500 hover:bg-steel_blue-50 rounded-md"
-            >About</a
+            >Over ons</a
           >
           <a
-            href="./news"
+            href="./news/"
             class="block px-3 py-2 text-steel_blue-500 bg-steel_blue-50 rounded-md"
-            >News</a
+            >Nieuws</a
           >
           <a
             href="./#contact"
             class="block px-3 py-2 text-davys_gray-700 hover:text-steel_blue-500 hover:bg-steel_blue-50 rounded-md"
             >Contact</a
           >
-          <a
-            href="./"
-            class="block px-3 py-2 text-steel_blue-500 hover:text-white hover:bg-steel_blue-500 rounded-md"
-            >NL</a
-          >
         </div>
       </div>
     </nav>
-
-    <!-- Header Image -->
-    <div class="relative h-96">
-      <img
-        src="./images/news-header.jpg"
-        alt="News and Publications Header"
-        class="w-full h-full object-cover"
-      />
-      <div class="absolute inset-0 bg-steel_blue-900 bg-opacity-50"></div>
-    </div>
-
     <!-- Hero Section -->
-    <section class="bg-steel_blue-600 text-white py-20">
-      <div class="container mx-auto px-4">
+    <section class="relative text-white py-20">
+      <!-- Background Image -->
+      <div class="absolute inset-0 z-0">
+        <img
+          src="./images/hero-bg.jpg"
+          alt="AI en Bedrijfstransformatie"
+          class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 bg-steel_blue-200 bg-opacity-70"></div>
+      </div>
+
+      <!-- Content -->
+      <div class="container mx-auto px-4 relative z-10">
         <h1 class="wix-madefor-text-title text-4xl md:text-5xl mb-6">
-          News & Publications
+          Nieuws & Publicaties
         </h1>
         <p class="wix-madefor-text-text text-xl mb-8 max-w-2xl">
-          Stay informed about the latest developments in AI, business
-          transformation, and industry insights.
+          Blijf op de hoogte van de laatste ontwikkelingen in AI en
+          bedrijfstransformatie.
         </p>
       </div>
     </section>
@@ -310,7 +304,7 @@
           <!-- Featured Article -->
           <div class="col-span-full md:col-span-2 lg:col-span-3">
             <a
-              href="./news/de-toekomst-van-ai-in-bedrijfsprocessen.html"
+              href=""
               class="block group"
             >
               <div
@@ -318,19 +312,19 @@
               >
                 <div class="p-6">
                   <div class="text-steel_blue-500 text-sm mb-2">
-                    March 20, 2024
+                    20 maart 2024
                   </div>
                   <h2
                     class="wix-madefor-text-title text-2xl mb-4 group-hover:text-steel_blue-500 transition-colors"
                   >
-                    The Future of AI in Business Operations
+                    De Toekomst van AI in Bedrijfsvoering
                   </h2>
                   <p class="text-davys_gray-700 mb-4">
-                    Explore how artificial intelligence is reshaping business
-                    operations and what it means for the future of work.
+                    Ontdek hoe kunstmatige intelligentie de bedrijfsvoering
+                    verandert en wat dit betekent voor de toekomst van werk.
                   </p>
                   <div class="flex items-center text-steel_blue-500">
-                    <span class="mr-2">Read more</span>
+                    <span class="mr-2">Lees meer</span>
                     <svg
                       class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"
                       fill="none"
@@ -355,20 +349,20 @@
             class="bg-white rounded-lg shadow hover:shadow-md transition-shadow"
           >
             <div class="p-6">
-              <div class="text-steel_blue-500 text-sm mb-2">March 15, 2024</div>
+              <div class="text-steel_blue-500 text-sm mb-2">15 maart 2024</div>
               <h3 class="wix-madefor-text-title text-xl mb-4">
-                The Evolution of Business Management: Strategic Insights for
-                SMEs
+                De Evolutie van Bedrijfsmanagement: Strategische Inzichten voor
+                MKB
               </h3>
               <p class="text-davys_gray-700 mb-4">
-                Explore the transformation of business management from early
-                efficiency models to modern AI-augmented approaches.
+                Verken de transformatie van bedrijfsmanagement van vroege
+                efficiëntiemodellen naar moderne AI-gestuurde benaderingen.
               </p>
               <a
-                href="./news/evolution-of-business-management.html"
+                href="evolution-of-business-management.news.html"
                 class="text-steel_blue-500 hover:text-steel_blue-600 hover:underline transition-colors"
               >
-                Read more →
+                Lees meer →
               </a>
             </div>
           </div>
@@ -377,19 +371,19 @@
             class="bg-white rounded-lg shadow hover:shadow-md transition-shadow"
           >
             <div class="p-6">
-              <div class="text-steel_blue-500 text-sm mb-2">March 10, 2024</div>
+              <div class="text-steel_blue-500 text-sm mb-2">10 maart 2024</div>
               <h3 class="wix-madefor-text-title text-xl mb-4">
-                Data-Driven Decision Making
+                Datagedreven Besluitvorming
               </h3>
               <p class="text-davys_gray-700 mb-4">
-                How to leverage data analytics and AI for better business
-                decisions.
+                Hoe u data-analyse en AI kunt inzetten voor betere
+                bedrijfsbeslissingen.
               </p>
               <a
-                href="#"
+                href=""
                 class="text-steel_blue-500 hover:text-steel_blue-600 hover:underline transition-colors"
               >
-                Read more →
+                Lees meer →
               </a>
             </div>
           </div>
@@ -398,18 +392,18 @@
             class="bg-white rounded-lg shadow hover:shadow-md transition-shadow"
           >
             <div class="p-6">
-              <div class="text-steel_blue-500 text-sm mb-2">March 5, 2024</div>
+              <div class="text-steel_blue-500 text-sm mb-2">5 maart 2024</div>
               <h3 class="wix-madefor-text-title text-xl mb-4">
-                AI Ethics in Business
+                AI Ethiek in het Bedrijfsleven
               </h3>
               <p class="text-davys_gray-700 mb-4">
-                Understanding the ethical considerations in AI implementation.
+                Begrip van ethische overwegingen bij AI-implementatie.
               </p>
               <a
-                href="#"
+                href=""
                 class="text-steel_blue-500 hover:text-steel_blue-600 hover:underline transition-colors"
               >
-                Read more →
+                Lees meer →
               </a>
             </div>
           </div>
@@ -421,7 +415,20 @@
     <footer class="bg-steel_blue-900 text-white py-8">
       <div class="container mx-auto px-4 text-center">
         <p class="text-steel_blue-100 font-medium">
-          &copy; 2024 Hove AI Dynamics. All rights reserved.
+          &copy; 2024 Hove AI Dynamics. Alle rechten voorbehouden.
+        </p>
+        <p
+          class="text-steel_blue-200 text-sm mt-4 border-t border-steel_blue-700 pt-4"
+        >
+          Hero afbeelding: Photo by
+          <a
+            href="https://www.pexels.com/photo/woman-using-laptop-computer-with-vr-headset-3861458/"
+            class="hover:text-white transition-colors underline"
+            target="_blank"
+            rel="noopener noreferrer"
+            >ThisIsEngineering</a
+          >
+          on Pexels
         </p>
       </div>
     </footer>
@@ -434,13 +441,13 @@
       {
         "@context": "https://schema.org",
         "@type": "CollectionPage",
-        "name": "News & Publications",
-        "description": "Stay updated with the latest insights, trends, and news in AI and business transformation from Hove AI Dynamics.",
-        "url": "https://businessdatasolutions.nl/news",
+        "name": "Nieuws & Publicaties",
+        "description": "Blijf op de hoogte van de laatste inzichten, trends en nieuws over AI en bedrijfstransformatie van Hove AI Dynamics.",
+        "url": "https://businessdatasolutions.github.io/haidy/news",
         "publisher": {
           "@type": "Organization",
           "name": "Hove AI Dynamics",
-          "url": "https://businessdatasolutions.nl"
+          "url": "https://businessdatasolutions.github.io/haidy"
         }
       }
     </script>
